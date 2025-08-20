@@ -1,18 +1,25 @@
 import 'package:flutter/material.dart';
-import 'category_screen.dart';
+import 'package:provider/provider.dart';
+import 'providers/favorites_provider.dart';
+import 'screens/categories_page.dart';
 
 void main() {
-  runApp(DailyAffirmationsApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => FavoritesProvider(),
+      child: MyApp(),
+    ),
+  );
 }
 
-class DailyAffirmationsApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Daily Affirmations',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: CategoryScreen(),
+      title: "Affirmations App",
+      theme: ThemeData(primarySwatch: Colors.teal),
+      home: CategoriesPage(),
     );
   }
 }
