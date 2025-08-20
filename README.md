@@ -6,15 +6,16 @@ A simple Flutter app that provides daily affirmations in different life categori
 - 12 categories of affirmations (Self-Love, Confidence, Motivation, etc.)
 - Sample affirmations for each category
 - Clean project structure
+- GitHub Actions workflow builds APK automatically
 
 ## 📱 Setup
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/daily_affirmations_app.git
+   git clone https://github.com/your-username/affirmation.git
    ```
 2. Navigate into the folder:
    ```bash
-   cd daily_affirmations_app
+   cd affirmation
    ```
 3. Get dependencies:
    ```bash
@@ -30,6 +31,7 @@ A simple Flutter app that provides daily affirmations in different life categori
 - `lib/category_screen.dart` – Categories list
 - `lib/affirmation_screen.dart` – Shows affirmations
 - `lib/data/affirmations.dart` – Affirmations data
+- `.github/workflows/flutter_build.yml` – GitHub Actions workflow
 
 ---
 Made with ❤️ in Flutter
