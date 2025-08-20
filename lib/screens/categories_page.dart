@@ -3,37 +3,31 @@ import 'affirmations_page.dart';
 import 'favorites_page.dart';
 
 class CategoriesPage extends StatelessWidget {
-  final List<String> categories = [
-    "Love",
+  const CategoriesPage({super.key});
+
+  final List<String> categories = const [
+    "Self-Love",
     "Confidence",
-    "Success",
-    "Health",
-    "Gratitude",
     "Motivation",
-    "Happiness",
-    "Calmness",
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Affirmation Categories"),
+        title: const Text("Daily Affirmations"),
         actions: [
           IconButton(
-            icon: Icon(Icons.favorite),
+            icon: const Icon(Icons.favorite),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => FavoritesPage()),
-              );
+              Navigator.pushNamed(context, FavoritesPage.routeName);
             },
-          )
+          ),
         ],
       ),
       body: GridView.builder(
-        padding: EdgeInsets.all(16),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        padding: const EdgeInsets.all(16),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 16,
           mainAxisSpacing: 16,
@@ -45,21 +39,23 @@ class CategoriesPage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (_) => AffirmationsPage(
-                    category: categories[index],
-                  ),
+                  builder: (_) => AffirmationsPage(category: categories[index]),
                 ),
               );
             },
-            child: Card(
-              shape: RoundedRectangleBorder(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.blue.shade100,
                 borderRadius: BorderRadius.circular(16),
               ),
-              elevation: 4,
               child: Center(
                 child: Text(
                   categories[index],
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),

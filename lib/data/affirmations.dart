@@ -1,50 +1,68 @@
-final Map<String, List<String>> affirmations = {
+final Map<String, List<String>> affirmationsByCategory = {
   "Self-Love": [
-    "I am worthy of love and respect.",
-    "I accept myself unconditionally."
+    "I am enough.",
+    "I love myself deeply.",
+    "I am worthy of love.",
+    "I accept myself unconditionally.",
+    "I treat myself with kindness.",
+    "I am proud of who I am.",
+    "I am a gift to the world.",
+    "I radiate self-love.",
+    "I honor my body and mind.",
+    "I believe in myself.",
+    "I choose to be happy.",
+    "I embrace my uniqueness.",
+    "I am growing every day.",
+    "I am beautiful inside and out.",
+    "I forgive myself.",
+    "I attract positive energy.",
+    "I celebrate my achievements.",
+    "I am confident and strong.",
+    "I deserve respect.",
+    "I am worthy of success."
   ],
   "Confidence": [
-    "I believe in myself and my abilities.",
-    "I radiate confidence in all I do."
+    "I believe in my abilities.",
+    "I am fearless.",
+    "I am brave and bold.",
+    "Confidence flows through me.",
+    "I can achieve anything.",
+    "I trust my instincts.",
+    "I embrace challenges.",
+    "I shine with confidence.",
+    "I am unstoppable.",
+    "I radiate self-assurance.",
+    "I deserve success.",
+    "I speak with confidence.",
+    "I walk with purpose.",
+    "I am proud of my skills.",
+    "I inspire others with my confidence.",
+    "I overcome fear.",
+    "I believe in my journey.",
+    "I achieve my dreams.",
+    "I am bold and courageous.",
+    "I face challenges with confidence."
   ],
   "Motivation": [
-    "I am driven to achieve my goals.",
-    "Every step I take brings me closer to success."
-  ],
-  "Gratitude": [
-    "I am thankful for the blessings in my life.",
-    "Gratitude fills my heart and mind."
-  ],
-  "Inner Peace": [
-    "I am calm, centered, and at peace.",
-    "Peace flows through me with every breath."
-  ],
-  "Relationships": [
-    "I attract positive and loving relationships.",
-    "I give love freely and receive it in abundance."
-  ],
-  "Career Success": [
-    "I am successful in my career.",
-    "Opportunities for growth surround me."
-  ],
-  "Wealth & Abundance": [
-    "I attract wealth and prosperity into my life.",
-    "Abundance flows freely to me."
-  ],
-  "Health & Wellness": [
-    "I am healthy, strong, and full of energy.",
-    "My body radiates vitality and wellness."
-  ],
-  "Stress Relief": [
-    "I release all tension and embrace calm.",
-    "I am relaxed and stress-free."
-  ],
-  "Spiritual Growth": [
-    "I am connected to my higher self.",
-    "I grow spiritually each day."
-  ],
-  "Positive Mindset": [
-    "I choose positivity in every situation.",
-    "My mind is filled with uplifting thoughts."
+    "I am highly motivated.",
+    "I take action daily.",
+    "I stay focused on my goals.",
+    "I never give up.",
+    "I am determined to succeed.",
+    "I am driven and ambitious.",
+    "I turn dreams into reality.",
+    "I attract opportunities.",
+    "I push through challenges.",
+    "I stay positive under pressure.",
+    "I welcome growth.",
+    "I am persistent and resilient.",
+    "I am full of energy.",
+    "I am productive and focused.",
+    "I move forward with purpose.",
+    "I am consistent in my efforts.",
+    "I learn from setbacks.",
+    "I am disciplined.",
+    "I believe in progress.",
+    "I achieve greatness."
   ],
 };
